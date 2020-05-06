@@ -37,10 +37,7 @@ def test_web(browser, page):
     respons_sel = browser.find_element_by_css_selector(".smart-hints__hint")
     response = respons_sel.text
 
-    try:
-        assert response == "Correct!", "Result is not correct"
-    except AssertionError:
-        final += response
+    assert response == "Correct!", "Result is not correct"
 
 
 
