@@ -24,7 +24,7 @@ def test_web(browser, page):
     import time
     import math
     answer = str(math.log(int(time.time())))
-    final = ''
+
 
     browser.get(page)
     input1 = browser.find_element_by_css_selector("#ember70")
